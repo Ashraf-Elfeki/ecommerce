@@ -1,0 +1,21 @@
+This document for development process documentation to the developer and me 
+
+1- We Use Varible called "noNavbar" in some pages like (admin/index.php) to exclude including the Navbar in this Pages 
+	and we set the code that manage this process in init.php page. if you need to exclude the navbar from specific page 
+	you only need to declare $noNavbar variable before including init.php .
+
+2- We Use Bootstrap (v 3.3 ) Navbar in the admin dashboard and set the code in navbar.php page and we customize some items and customize its style in backend.css file 
+
+3- If You need to set a spesific Page title set variable $pageTitle = "Title You Need" Else "Default" Title it will 
+automatic set. this done with printTitle() function in function.php page .
+
+4- You Can Login to the admin dashboard  from index.php . It have simple design form with two fields user name and password.
+
+5- For Invalid Admin it will redirect to the admin dashboard that contains full actions that we will discuse its sequenially later .
+
+6- The admin can edit your profile from right drobdown list and select Edit profile.
+
+7- The stored Data in DB showen in a form with editable fields where the user can edit its profile and simply click on update button.
+
+8- You Can Add New Member and insert (User NAme, Password, Email, Full Name) and Click on Add Button 
+   to add this member to the database.
