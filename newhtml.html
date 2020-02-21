@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>JSON Training</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="name"></div>
+        <div id="age"></div>
+        
+   
+    <script type="text/javascript" src="layout/js/jquery-3.4.1.js"></script>
+    <script>
+            /*global $*/
+            $(function (){
+                $.getJSON('newjson.json',function(data){
+                    console.log(data);
+                    var content = '';
+                    for(var x in data){
+                        content += data.age;
+                    }
+                    console.log(content);
+                    $("#name").html(content);
+                })
+            });
+    </script>
+     </body>
+</html>
