@@ -1,6 +1,10 @@
 {
+<<<<<<< HEAD
     "name": "Ashraf Elfeky",
     "age" : 30,
     "email" : "ashraf.elfki32@gmail.com",
     "address" : "khaitan - Kuwait"
+=======
+    "name": "Ashraf Elfeky"
+>>>>>>> c0b1787e8df51c5b21cccea03a9c3fc6284b1282
 }
