@@ -1,0 +1,20 @@
+[
+	{
+    "name"		: "Ashraf Elfeky",
+    "age" 		: 30,
+    "email" 	: "ashraf.elfki32@gmail.com",
+    "address" 	: "khaitan - Kuwait"
+	},
+	{
+    "name"		: "Ahmed Ashraf",
+    "age" 		: 2,
+    "email" 	: "ahmed-ashraf.elfki32@gmail.com",
+    "address"	: "Shebeen Elkom - Egypt"
+	},	
+	{
+    "name"		: "Esraa Ahmed",
+    "age" 		: 26,
+    "email" 	: "esraa-ashraf.elfki32@gmail.com",
+    "address" 	: "Shebeen Elkom - Egypt"
+	}
+]

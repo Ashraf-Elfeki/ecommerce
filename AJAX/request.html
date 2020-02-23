@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax Request</title>
+</head>
+<body>
+	<button onclick="getRepos()">Get Repos</button>
+	<div id="name"></div>
+</body>
+<script type="text/javascript">
+	function getRepos() {
+		var myRequest = new XMLHttpRequest();
+		myRequest.onreadystatechange = function () {
+			if (this.readyState === 4 && this.status === 200) {
+
+				//console.log(JSON.parse(this.responseText));
+				var JSObject = JSON.parse(this.responseText);
+				var myText = "";
+				for (var i = 0; i < JSObject.length; i++) {
+
+					//console.log(JSObject[0].username);
+					myText = myText + JSObject[i].name + "</br>";
+				}
+				document.getElementById('name').innerHTML = myText;
+			}
+
+		};
+		myRequest.open("GET","newjson.json",true);
+		myRequest.send();
+		
+	}
+</script>
+</html>
